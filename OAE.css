@@ -7,7 +7,6 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: rgb(155, 80, 80);
-    justify-content: space-around;
 }
 
 .navbar {
@@ -23,47 +22,51 @@ nav a {
     color: #D4AF37;
 }
 
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
 .nav-links {
     display: flex;
-    flex-direction: row;
     gap: 40px;
-    padding: 10px;
-    text-decoration: none;
-    color: #D4AF37;
-    font-weight: bold;
     list-style: none;
+    font-weight: bold;
 }
 
 .tag {
     padding: 14px 32px;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 600;
     background-color: #D4AF37;
-    color: antiquewhite;
+    color: white;
     border-radius: 14px;
-    justify-self: flex-end;
 }
 
 main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 130px 20px 60px;
-}
-
-.container {
     color: white;
+    text-align: center;
 }
 
 h1 {
-    font-size: 100px;
+    font-size: clamp(48px, 8vw, 100px);
     font-weight: 300;
-    letter-spacing: 0, 0.12em;
+    letter-spacing: 0.05em;
     line-height: 1.05;
-    text-align: center;
-
 }
 
 .meal {
-    color: #d4af37;
+    color: #D4AF37;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 40px auto 0;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .input {
@@ -77,43 +80,25 @@ h1 {
     border-radius: 14px;
 }
 
-.input input {
+#display {
     flex: 1;
+    min-width: 0;
     border: none;
     outline: none;
     padding: 12px 14px;
     font-size: 18px;
-}
-
-#input {
-    flex: 1;
-    min-width: 0;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
+    background: transparent;
 }
 
 .find {
     padding: 14px 28px;
-    background-color: #d4af37;
+    background-color: #D4AF37;
     color: white;
+    font-weight: 600;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-}
-
-#display {
-    font-size: 20px;
-    padding: 12px 16px;
-    width: 300px;
-}
-
-#display::placeholder {
-    color: #999;
-    font-size: 18px;
 }
 
 .prices {
@@ -121,22 +106,14 @@ h1 {
     justify-content: center;
     gap: 16px;
     margin-top: 24px;
-    color: white;
     list-style: none;
 }
 
 .prices li {
     padding: 8px 20px;
-    border: 1px solid #d4af37;
+    border: 1px solid #D4AF37;
     border-radius: 999px;
-    color: #d4af37;
-}
-
-main p {
-    max-width: 600px;
-    margin: 40px auto 0;
-    font-size: 16px;
-    line-height: 1.7;
+    color: #D4AF37;
 }
 
 .specials {
@@ -232,4 +209,12 @@ main p {
     border: none;
     border-radius: 999px;
     cursor: pointer;
+}
+
+.hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("images/hiro.jpeg");
+    background-size: cover;
+    background-position: center;
 }
