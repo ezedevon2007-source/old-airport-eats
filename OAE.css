@@ -56,7 +56,7 @@ main {
 h1 {
     font-size: 100px;
     font-weight: 300;
-    letter-spacing: 0, 12em;
+    letter-spacing: 0, 0.12em;
     line-height: 1.05;
     text-align: center;
 
@@ -66,19 +66,11 @@ h1 {
     color: #d4af37;
 }
 
-.your {
-    color: white;
-}
-
-.meal {
-    color: #d4af37
-}
-
 .input {
     display: flex;
     align-items: center;
     gap: 10px;
-    max-width: 580;
+    max-width: 580px;
     margin: 50px auto 0;
     padding: 8px;
     background-color: whitesmoke;
@@ -145,4 +137,99 @@ main p {
     margin: 40px auto 0;
     font-size: 16px;
     line-height: 1.7;
+}
+
+.specials {
+    background-color: #fffdfb;
+    padding: 40px 100px 60px;
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    color: #d4af37;
+    font-size: 32px;
+}
+
+.specials h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+}
+
+.see-all {
+    color: #333;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card h3 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #222;
+}
+
+.dish {
+    color: #666;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.rating {
+    margin-top: 6px;
+    color: #222;
+}
+
+.star {
+    color: #f5b301;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.add {
+    padding: 10px 36px;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
 }
